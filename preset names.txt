@@ -1,0 +1,512 @@
+000  	Petrucci REC
+001  	Petrucci Rig 2020
+002  	Boogie IIC++
+003  	JP2C Best Rig
+004  	JP2C+
+005  	JohnP MarkIIC+
+006  	JP's IIC+ v12
+007  	Mesa MarkIV
+008  	Mesa TriAxess
+009  	VidarAus JP2C Rigv5
+010  	MESA TRIAXIS
+011  	Mark's Recto TNT
+012  	Mark's Recto 2
+013  	Mark Journey Set
+014  	L.O.G.
+015  	L.O.G. To Rest
+016  	L.O.G 11th Hour
+017  	L.O.G 11th Hour
+018  	Mark Morton Mesa
+019  	MarkIV_NKD
+020  	Evailution 1
+021  	Evailution 2
+022  	Legator Ninja (Fishman Modern)
+023  	Legator Ninja (Fishman Modern)
+024  	Sacrament
+025  	LAMB OF GOD
+026  	LAMB OF GOD
+027  	LAMB OF GOD
+028  	Blitz III
+029  	Lonestar rig
+030  	TM Lukather
+031  	Farfegnugen
+032  	Zakk's Marshall #34
+033  	Two Amps
+034  	B03 Sleepwalk
+035  	Chuggg
+036  	Shiva onthe Rocks
+037  	5153 Blue
+038  	GnomeMans Land 2
+039  	Diezel Herbert
+040  	Kind of Dream
+041  	Echo Deva III
+042  	Life in lockdown
+043  	Fremen Archon All-in-one
+044  	SinMix PiVi
+045  	High Landrons
+046  	Fender Acoustisonic Strat
+047  	Lunar Eclipse
+048  	Diamonique Rain
+049  	ThemePark
+050  	LAMB OF GOD
+051  	DiG
+052  	LT MK IV Cygnus
+053  	LT Rack Delays (Filth)
+054  	LT Rack Delays (Clean)
+055  	F.A.R.K
+056  	LT Crunch
+057  	LT Chunk
+058  	MCU
+059  	Rockbone! (mas bueno)
+060  	Skull Crusher
+061  	Powerball ENGL AX3 -c
+062  	Zakk Wylde
+063  	Vox AC-15W
+064  	Vox AC30s
+065  	MoreVox AC30s* v12
+066  	Hiwatt DR103* v12
+067  	AmpegSVT-4Guitar* v12
+068  	RolandJazzChorus* v12
+069  	==/MARSHALLS\==
+070  	JTM45Plexi Marshall v12
+071  	JTM 45 SCoils
+072  	Plexi 50Watt v12
+073  	More Plexi 50W
+074  	MstrVol 2204 50W
+075  	ClnsOnly Plexi50W v12
+076  	Plexi 100 Watt v12
+077  	More Plexi 100W v12
+078  	1959 SuperLead SLP
+079  	SuperLead Marshall v12
+080  	SilverJubilee Marshall v12
+081  	Brown Sound Plexi v12
+082  	ClnsOnly 100W Plexi v12
+083  	JCM 800 Marshall v12
+084  	SlashGnR AFD100 v12
+085  	1987X  v12
+086  	*1987X SCoils v12
+087  	JVM410H OD1chn v12
+088  	JVM410H OD2chn v12
+089  	JVM410HJS (Satch2)
+090  	=/MESA BOOGIE\=
+091  	2Chn Dual Rectifier v12
+092  	Orng 3Ch DualRectifier
+093  	Red3Ch DualRectifier v12
+094  	Thorendahl DualRectifier v12
+095  	MarkIIC+ options v12
+096  	More Mark IIC+ v12
+097  	MarkIIC++ (Only) v12
+098  	Mark IV options* v12
+099  	More Mark IV* v12
+100  	==/FENDERS\==
+101  	Texas Lonestar* v12
+102  	Subway Blues v12
+103  	Twd Champ* v12
+104  	Twd Princeton v12
+105  	Twd Deluxe* v12
+106  	Mo' Twd Deluxe* v12
+107  	TwdTwin HiPwr* v12
+108  	'59 Bassman
+109  	59 Bassman SCoils
+110  	15" Spkr Twd v12
+111  	Cln Twd&Brwn v12
+112  	Brwn Concert* v12
+113  	Brwn Super v12
+114  	Brwn Vibrolux* v12
+115  	Face Clns SCoil v12
+116  	Super Reverb v12
+117  	SuperRvrb SCoils v12
+118  	Deluxe* v12
+119  	Deluxe 4 Teles v12
+120  	15" VibroVerb v12
+121  	VibroVerb SCoils v12
+122  	65 Bassman v12
+123  	65 Bassman SCoils V12
+124  	BFace Twin* v12
+125  	*BFaceTwin SCoils v12
+126  	BF Princeton Rvrb v12
+127  	MASTER OF PUPPETS V2
+128  	59 Bassguy
+129  	65 Bassguy
+130  	Vibrato Lux
+131  	Deluxe Verb
+132  	Double Verb
+133  	A-Class 15
+134  	Top Boost
+135  	Prince Tone
+136  	Plexi 50W
+137  	Plexi 100W
+138  	Brit 800
+139  	Hipower
+140  	USA Mk IV
+141  	USA IIC+
+142  	Recto 1
+143  	Recto 2
+144  	Euro
+145  	AC-20 Deluxe
+146  	Shiver
+147  	Vibrato-King
+148  	Euro Uber
+149  	Solo 100
+150  	Super Verb
+151  	Friedman BE-100
+152  	Friedman HBE-100
+153  	Champlifier
+154  	Tremolo Deluxe
+155  	5153
+156  	Vibrato Deluxe
+157  	Mr. Z 38
+158  	Wreckers
+159  	Angle Severe
+160  	Spawn Q-Rod OD-1
+161  	CA3+
+162  	FAS Lead 1-3
+163  	Tucana
+164  	FAS Modern
+165  	Das Metall
+166  	ODS-100
+167  	The Brown Sound
+168  	Buddah Duomaster
+169  	Matchbox Chiefman
+170  	Supertweed
+171  	Brit JVM OD1
+172  	Brit JVM OD2
+173  	Blanknship Leeds
+174  	Supremo Trem
+175  	Citrus RV50
+176  	Carol Ann OD-2
+177  	JM45
+178  	Hot Kitty
+179  	Two-Stone J35
+180  	Spawn Nitrous
+181  	Brit Silver
+182  	Herbie
+183  	Dweezil's Bassguy
+184  	Ma the Meatloaf...
+185  	5F8 Tweed
+186  	Atomica
+187  	Deluxe Tweed
+188  	Dirty Shirley
+189  	Fox ODS
+190  	Nuclear Tone
+191  	6160s
+192  	Archean
+193  	Spawn Q-Rod OD-2
+194  	Wrecked Express
+195  	Brit Pre
+196  	Badger 18
+197  	Brit AFS100
+198  	Dizzy VH4
+199  	Bassman About 2 Explode
+200  	Band Commander
+201  	ODS-100 HRM
+202  	Vibrato Verb
+203  	TX Star
+204  	Jumped Plexi
+205  	Studio Leads
+206  	Dee Cee 30
+207  	Whole Lotta
+208  	Fuzz Tweed
+209  	Hell's Glockenspiels
+210  	Petrucci Rig
+211  	Solo 88
+212  	Comet Concourse
+213  	Try Axes
+214  	Cameron CCV
+215  	Capt Hook
+216  	JS410
+217  	Corncob
+218  	Bludojai
+219  	JM45 Blues Lead
+220  	Jr. Blues
+221  	Triptik
+222  	FAS Originals
+223  	EJ Clean
+224  	Who's Next?
+225  	Thick and Chunky
+226  	Tucana II
+227  	Studio Clean
+228  	Solo 99
+229  	Triple Crest
+230  	Djentlemanly
+231  	Leon's Djent Bass
+232  	Citrus A30
+233  	Ruby Rocket
+234  	Machine Gun
+235  	Bogfish
+236  	Limelight M@
+237  	Glass Leads
+238  	Stacked Delays
+239  	Get Your Kicks
+240  	Subtle Blues
+241  	Chainsaw 88
+242  	Deluxe Tapes
+243  	Destructive Appetites
+244  	So Many Roads
+245  	Tiny Terrier
+246  	Jim and Leo
+247  	Cork Sniffers
+248  	Still Blue
+249  	MF Euro
+250  	Rockin' Train
+251  	Dr-Z's blues
+252  	Carol-Ann OD2 lead-1
+253  	Carol-Ann OD2 lead-2
+254  	Carol-Ann OD2 lead-3
+255  	Fat Buddah
+256  	Bright Buddah
+257  	Bludojai Lead 1
+258  	Bludojai Lead 2
+259  	TwoRock torock
+260  	TwoRock torock II
+261  	Zen Wreck
+262  	FAS Wreck
+263  	What theFuchs isgoin
+264  	ODS-100 Lead 1
+265  	ODS-100 Lead 2
+266  	ODS-100 Lead 3
+267  	ODS-100 Lead4 JoeB
+268  	ODS-100 HRM Midlead
+269  	ODS-100 Ford lead-1
+270  	ODS-100 Ford lead-2
+271  	ODS-100 Ford lead-3
+272  	Dumble and Dumbler
+273  	Fat ODS-100
+274  	Fat lead
+275  	Komet Concorde 1
+276  	Komet Concorde 2
+277  	Komet Concorde 3
+278  	Tucana blues 1
+279  	Tucana blues 2
+280  	Hook blues
+281  	Warm BogFish lead
+282  	5F1 Tweed EC
+283  	Blues Jr Fat
+284  	Texas Blues Lonestar
+285  	Texas Blues Vibroking
+286  	Texas Blues VibratoVerb
+287  	Texas Blues Bandmaster
+288  	Texas Blues Super Reverb
+289  	Texas Blues Princeton
+290  	Texas Blues DrZ
+291  	Texas Blues Bassman
+292  	Dirty tweed
+293  	Andy Little Wing
+294  	Just one night
+295  	AC20 crunch
+296  	AC20 crunch 2
+297  	AC20 fusion 1
+298  	AC20 fusion 2
+299  	AC20 fusion 3
+300  	Crunchy D30
+301  	Div13 crunch
+302  	J.Mayer I
+303  	J.Mayer II
+304  	<EMPTY>
+305  	DJENT La Tempesta
+306  	Bag Pipes drone
+307  	Vertigo!
+308  	Spring in a Cave
+309  	Dream Sequences
+310  	DynamoFlanger
+311  	Stereo Tape Delays
+312  	Mystic Arps
+313  	Frenetica
+314  	Heavenly Echo
+315  	Trem on the Tail
+316  	The Abyss
+317  	Quad Diatonic
+318  	S/Hip Ahoy
+319  	Rubber Biscuit
+320  	Double Diffusor
+321  	I'm Nationwide
+322  	Water Colors
+323  	Meditation Workshop
+324  	Perceptual Reverb
+325  	Band Delay Grooves
+326  	Rainbow Dash
+327  	Thick Choruses
+328  	New Jupiter
+329  	Tracking Ringmods
+330  	Starship Flanger
+331  	Undulation
+332  	Serenity Now!
+333  	Haunting Echoes
+334  	Rockabilly HotRod
+335  	Ambient Swirl
+336  	6th Stone From the Sun
+337  	Echoes from God
+338  	Auto Wah Funk
+339  	No Quarter
+340  	Flanging Flankers
+341  	Wide Chorus
+342  	Surf's Up
+343  	Flippin' Switch
+344  	Ascensions
+345  	Wandering Delays
+346  	Heavily Processed
+347  	Boutique Battle
+348  	Frogtones Irie
+349  	Nameless Streets
+350  	Fat Solo Lead 2
+351  	Rainy Nights III
+352  	Crunchy Even in Milk
+353  	Arpeggiator M@ness (B Min)
+354  	Class-A Brethren
+355  	Bond...James Bond
+356  	Synth Lineup
+357  	Screaming Plexi 3
+358  	Bostonian
+359  	Choral Canyons
+360  	Touch Phase III
+361  	8-Plex Golden
+362  	Disco Clean
+363  	Pitchmod Pulse
+364  	Sci-Fi Delays
+365  	Year of the City 2274
+366  	PolyOctaveGen Pedal
+367  	Tape Driver
+368  	New Atmos
+369  	Twin Peaks Bari
+370  	Dual Amp Diatonic
+371  	Gamelan 2021
+372  	Horrorfest
+373  	Wide E-plex 21
+374  	Funky Synth
+375  	5-Octave Lead
+376  	Music Boxes
+377  	Purple Flanger
+378  	Mic Pre Slam
+379  	Great Plains
+380  	Panner Pedal
+381  	Feedbacker Pedal
+382  	Ham & Cheese
+383  	Triple Filter Funk
+384  	Overcompressed
+385  	Floating Swells
+386  	Raja Drone III
+387  	Direct Injects
+388  	One-Note Synthestra
+389  	By Your Command
+390  	Brittle Comp Rhythm
+391  	Ping-Pong Pong-Ping
+392  	Rotary Scenes
+393  	New Planets
+394  	Home World
+395  	Scintilations
+396  	Proggy Plex Filter
+397  	Traffic Jam
+398  	Katie's Song
+399  	Detuned Plexi
+400  	Bouncing Echo
+401  	Bad
+402  	8-Voice Chorus
+403  	Dual Clean
+404  	Seq and LFO Wahs
+405  	No-Synth Synth
+406  	New Country
+407  	Ten-Tap Alpha
+408  	Drop Tune
+409  	Pre+Post Tape Pedals
+410  	In a Fixx
+411  	Uber Chuggas
+412  	L.A. Session Clean
+413  	'63 Tube Spring Verb
+414  	Yngwie!
+415  	Rhythm Tap
+416  	Run like Heck
+417  	1967 All Over Again
+418  	M@-o-spheres
+419  	Rotary Tapeverb
+420  	Melancholy
+421  	Shifted Band Delay
+422  	Jeff & Jan
+423  	Later Eddie
+424  	PCM70 Hall
+425  	Mr.Gilmour Lead
+426  	Soundtrack
+427  	Plate Collection
+428  	Juicy Lead
+429  	Ganymede 9
+430  	Forty Miles
+431  	Freeway Jam
+432  	Beef Supreme
+433  	Shoegaze Fuzz
+434  	Pedalboard Deluxe
+435  	Clockwork Banana
+436  	Chugnuts
+437  	East Wes
+438  	Bayou Country
+439  	Prometheus WV
+440  	Ned Beatty
+441  	Non-Lin Verbs
+442  	A Kind of Dream
+443  	Spandex & Hairspray
+444  	Mutatron Bye-Phaser
+445  	Avant Jazz
+446  	Shiva on the Rocks
+447  	Heavy Harmonies
+448  	Quad Series Delay
+449  	Stone in Love
+450  	CE-1 Chorus/Vibe
+451  	Fifth Tribe
+452  	Synchrostep Flanger
+453  	Circuitbenders
+454  	Stereo Death Fuzz
+455  	Forlorn
+456  	Ambient Guitar
+457  	Eruption
+458  	Thrilling Chilling
+459  	Mr.Floyd
+460  	Men In The Box
+461  	Barracuda
+462  	Solar Eclipses
+463  	Comb Delays
+464  	Time After Time
+465  	Capricorn 3
+466  	How Soon is Soon?
+467  	Circular Delay
+468  	Blitz III
+469  	Final Frontier 3
+470  	Dynafilter Dual Mod
+471  	Pitch Follower
+472  	Fiiifths in Space
+473  	Sea of Tranquility
+474  	Corbomite Maneuver
+475  	The Infield
+476  	Polychromatic Shifter
+477  	Clocktower
+478  	Plex Verb 8x2
+479  	Night Creatures
+480  	Reverb DynaMix
+481  	Tumbleweeds
+482  	W@rped Vinyl 3.0
+483  	1987 Clean
+484  	Scene Control Delay
+485  	Sultans
+486  	RockMeOn Clean
+487  	High Landrons
+488  	Lunar Eclipses
+489  	Crystal Scions
+490  	Jeff Gets Ready
+491  	FilteRING Funk
+492  	Fly By Night
+493  	Reich-Like
+494  	Echo Deva III
+495  	Cliffs of Dover
+496  	Diamonique Rain
+497  	Compurhythm
+498  	Gnome Man's Lands
+499  	Stevens Rebel Yell
+500  	Hevy Devy
+501  	Pete-a-Palooza
+502  	Larry Mitchell NY Steak
+503  	Mark's Day's Recto Cygnus
+504  	Fremen's Drones of Arrakis
+505  	Brett's Party Pack
+506  	Brett's Party Pack 2
+507  	Austin Buddy's XTCs
+508  	Leon's Live
+509  	Out1:FOH Out2:Cab
+510  	Amp Match Template
+511  	BYPASS
