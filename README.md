@@ -16,7 +16,7 @@
  
  -> Boot-up TFT screen background color and text color
  
- -> TFT screen background color (all function screens) and  text color row 1, screen text color row 2, screen text color row 3
+ -> TFT screen background color (all function screens) and  text color row 1, row 2, row 3
  
  -> -> This can be set for the Scenes screen, presets screen, effects screen, AMP ABCD screen, Tuner screen, Number screen, Tempo screen, preset up / down screen.
  
