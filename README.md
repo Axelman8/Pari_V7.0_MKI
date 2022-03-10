@@ -8,6 +8,7 @@
  
  
  SETTINGS:
+ 
  -> Define the function on the screens 5, 10, 11, 12, 13, 14, 15
  
  -> Boot-up TFT screen background color and text color
