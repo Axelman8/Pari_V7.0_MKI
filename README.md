@@ -1,12 +1,13 @@
 # Pari_V7.0_MKI
  Fractal Audio axeFxIII midi controller MK1 
+ ===================================================================================
  
  This is the first version that has a user .ini file to make personal configuration settings.
  
  C:\Users\[your_name]\Documents\Arduino\libraries\PARI_INI
  file: SD_ini.h
  
- 
+ ===================================================================================
  
  SETTINGS:
  
@@ -22,9 +23,9 @@
  
  -> Your preset names 0-510
  
+ ===================================================================================
  
  What is the benefit?
- 
  With this file separated from the .ino files,  you can flash new software versions, without effecting your own settings.  No Arduino IDE is needed.
 
 
