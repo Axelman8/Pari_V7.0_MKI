@@ -31,10 +31,12 @@
 
 
 ================
+
 Future plans:
 
 -> having all user config settings in the ini file, so updates would only be flashing a .HEX file.  No arduino IDE needed
 
+================
 
 
 Axelman8
