@@ -7,6 +7,7 @@
  file: SD_ini.h
  
  
+ 
  SETTINGS:
  
  -> Define the function on the screens 5, 10, 11, 12, 13, 14, 15
@@ -23,7 +24,9 @@
  
  
  What is the benefit?
+ 
  With this file separated from the .ino files,  you can flash new software versions, without effecting your own settings.  No Arduino IDE is needed.
+
 
 
 Axelman8
