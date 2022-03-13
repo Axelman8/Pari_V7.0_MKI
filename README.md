@@ -35,7 +35,7 @@
 
 Future plans:
 
--> having all user config settings in the ini file, so updates would only be flashing a .HEX file.  No arduino IDE needed
+-> having all user config settings in the ini file's, so updates would only be about flashing a .HEX file.  No arduino IDE needed
 
 ================
 
