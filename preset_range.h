@@ -3,8 +3,7 @@
 
 /*===========================================   -  Include library's  -  ================================================*/
 
-#include "SD_program.h"
-#include <SD_ini.h>
+#include <presets_ini.h>
 
 /*=============================================================================================================================*/
 /* presetRange is to determen which bank you are in.  then it will display all 0-9 presets in that bank with page "preset-names"*/

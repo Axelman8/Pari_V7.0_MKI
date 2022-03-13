@@ -117,6 +117,12 @@
 *                             the programme doesnt freeze anymore!
 *               07-03-2022  - Fixed the effect1 - effect19 by resetting the effect variable value to ZERO 
 *                             on every new preset selection.                                                  -> DONE               
+*               13-3-2022   - Rearange program files:  add them as libriary files:                
+*                             1: Create SD_ini.h file for the personal screen definitions                     -> DONE                            
+*                             2: Create variables_ini.h for the variables                                     -> DONE
+*                             3: Create preset_ini.h for the user presets                                     -> DONE
+*                             
+*                             4 Remove variables.h and SD_program.h from the .ino file                        -> DONE
 *                           
 ========================================================================================================================*/
 /*Axelman8*/

@@ -5,7 +5,7 @@
 
 #include <AxeFxControl.h>
 #include <SD_ini.h>
-#include "SD_program.h"
+
 #include "Screenstyle.h"
 #include "axe_handler.h"
 #include "Preset_range.h"
@@ -248,7 +248,7 @@ void presetSelection()
             }
             Axe.sendPresetChange(CurPreset);
             effectCycle = true;
-            getScenes = false;
+            getScenes = true;
             debugln(); debug(" -> effectcycle set to:  true");
             debugln(); debug(" -> getScenes set to:  false");        
             presetRange();
@@ -283,8 +283,9 @@ void auditionmodeEnd_Selection()
             effectCycle = true;
             debugln(); debug(" -> getScenes set to:  true");
             debugln(); debug(" -> effectcycle set to:  true");
-            Axe.sendPresetChange(active_Preset);
+            //Axe.sendPresetChange(active_Preset);
             CurPreset = (active_Preset);
+            ini_scenes();            
             debugln(); debug(" Auditionmode OFF CurPreset = "); debug(CurPreset);            
             debugln(); debug(" -> Pressed Switch = "); debug(currentSwitch + 1);
             delay(200);
@@ -491,18 +492,8 @@ void auditionmodePage_selection()
             auditionmode_LCD_text();
             effectCycle = true;
             debugln(); debug(" -> effectcycle set to:  true");            
-            digitalWrite (CS13, LOW);
-            tft.fillScreen(TFT_BLACK);
-            tft.setTextColor(TFT_RED);
-            tft.setTextSize(3); tft.setCursor(10, 30);
-            tft.println("AUDITION");
-            tft.setTextSize(4); tft.setCursor(60, 80);
-            tft.println("ON");
-            tft.drawRect(0, 0, 160, 128, TFT_RED); // Draw bezel line
-            digitalWrite (CS13, HIGH);
-            delay(200);
-            tapTempo_flash_selection_screen();
-            tuner_selectionScreen();            
+            auditionMode_ON_screen();
+            auditionmodeTopscreens();
           }
                     else
           {
@@ -510,6 +501,17 @@ void auditionmodePage_selection()
            auditionmodeEnd_Selection();
           }
 }
+
+void auditionmodePage_tuner_OFF_selection()
+          {
+            debugln(); debug (" -> auditionmode set to: true");
+            auditionmodeTopscreens();
+            ini_preset();
+            auditionmode_LCD_text();
+            effectCycle = true;
+            debugln(); debug(" -> effectcycle set to:  true");            
+            auditionMode_ON_screen();
+          }
 
 /*===================================================================================*/
 /*Axelman8*/

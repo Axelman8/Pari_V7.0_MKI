@@ -139,44 +139,13 @@ void displayTuner(TFT_eSPI* screen, const char *note, const byte string, const b
   =======================================================================================================================*/
   
 void onTunerData(const char *note, const byte string, const byte fineTune) 
-{
-//  lcd.setCursor(0,0);
-//  lcd.print("       ");
-//  lcd.setCursor(7,0);lcd.print(note);
-//  lcd.setCursor(9,0);lcd.print(string);
-//  lcd.print("       ");
-//  
-//  lcd.createChar(5, check);
-//  lcd.setCursor(0, 1); /*in the display's second row. There are many possible designs. 
-//  I chose this one, because it fits the display perfectly for a smooth movement.*/
-//
-//
-//  //1.: The value is lower than what the Axe actually sends. In this case just show the tuning to be too low.
-//  if (fineTune <= 15)                        {    lcd.write(255);lcd.print("      ||       ");}
-//  if ((fineTune >= 16) && (fineTune <= 23))  {    lcd.write(255);lcd.print("      ||       ");}
-//  if ((fineTune >= 24) && (fineTune <= 28))  {    lcd.print(" ");lcd.write(255);lcd.print("     ||       ");}
-//  if ((fineTune >= 29) && (fineTune <= 34))  {    lcd.print("  ");lcd.write(255);lcd.print("    ||       ");}
-//  if ((fineTune >= 35) && (fineTune <= 39))  {    lcd.print("   ");lcd.write(255);lcd.print("   ||       ");}
-//  if ((fineTune >= 40) && (fineTune <= 45))  {    lcd.print("    ");lcd.write(255);lcd.print("  ||       ");}
-//  if ((fineTune >= 46) && (fineTune <= 50))  {    lcd.print("     ");lcd.write(255);lcd.print(" ||       ");}
-//  if ((fineTune >= 51) && (fineTune <= 56))  {    lcd.print("      ");lcd.write(255);lcd.print("||       ");}
-//  if ((fineTune >= 57) && (fineTune <= 61))  {    lcd.print("       ");lcd.write(219);lcd.print("|       ");}
-//  if ((fineTune >= 62) && (fineTune <= 64))  {    lcd.print("    ||  ");lcd.write(5);lcd.print("  ||    ");}
-//  if ((fineTune >= 65) && (fineTune <= 70))  {    lcd.print("       |");lcd.write(219);lcd.print("       ");}
-//  if ((fineTune >= 71) && (fineTune <= 75))  {    lcd.print("       ||");lcd.write(255);lcd.print("      ");}
-//  if ((fineTune >= 76) && (fineTune <= 81))  {    lcd.print("       || ");lcd.write(255);lcd.print("     ");}
-//  if ((fineTune >= 82) && (fineTune <= 86))  {    lcd.print("       ||  ");lcd.write(255);lcd.print("    ");}
-//  if ((fineTune >= 87) && (fineTune <= 92))  {    lcd.print("       ||   ");lcd.write(255);lcd.print("   ");}
-//  if ((fineTune >= 93) && (fineTune <= 98))  {    lcd.print("       ||    ");lcd.write(255);lcd.print("  ");}
-//  if ((fineTune >= 99) && (fineTune <= 103)) {    lcd.print("       ||     ");lcd.write(255);lcd.print(" ");}
-//  if ((fineTune >= 104) && (fineTune <= 110)){    lcd.print("       ||      ");lcd.write(255);}
-//  if (fineTune >= 101)                       {    lcd.print("       ||      ");lcd.write(255);}
-  displayTuner(screen, note, string, fineTune);
-}
+   {displayTuner(screen, note, string, fineTune);}
 
 
 void onTunerStatus(bool engaged) {
   if (Axe.isTunerEngaged() == false)
+  {
+    if (auditionMode != true)
   {
     getScenes = true;
     effectCycle = true;
@@ -185,8 +154,61 @@ void onTunerStatus(bool engaged) {
     ini_scenes();
     Axe.refresh();
     delay(500);
+    }
+  else
+  {auditionmodePage_tuner_OFF_selection();}  //quick and diry, but it works.  Aditionmode = on but the modePage is coded difrently}
   }
 }
+
+
+
+
+
+
+
+/*=======================================================================================================================
+   Tuner on LCD 16 * 2
+  =======================================================================================================================*/
+/* 
+void onTunerData(const char *note, const byte string, const byte fineTune) 
+{
+  lcd.setCursor(0,0);
+  lcd.print("       ");
+  lcd.setCursor(7,0);lcd.print(note);
+  lcd.setCursor(9,0);lcd.print(string);
+  lcd.print("       ");
+  
+  lcd.createChar(5, check);
+  lcd.setCursor(0, 1); //In the display's second row. There are many possible designs. 
+                       //I chose this one, because it fits the display perfectly for a smooth movement.
+
+
+  //1.: The value is lower than what the Axe actually sends. In this case just show the tuning to be too low.
+  if (fineTune <= 15)                        {    lcd.write(255);lcd.print("      ||       ");}
+  if ((fineTune >= 16) && (fineTune <= 23))  {    lcd.write(255);lcd.print("      ||       ");}
+  if ((fineTune >= 24) && (fineTune <= 28))  {    lcd.print(" ");lcd.write(255);lcd.print("     ||       ");}
+  if ((fineTune >= 29) && (fineTune <= 34))  {    lcd.print("  ");lcd.write(255);lcd.print("    ||       ");}
+  if ((fineTune >= 35) && (fineTune <= 39))  {    lcd.print("   ");lcd.write(255);lcd.print("   ||       ");}
+  if ((fineTune >= 40) && (fineTune <= 45))  {    lcd.print("    ");lcd.write(255);lcd.print("  ||       ");}
+  if ((fineTune >= 46) && (fineTune <= 50))  {    lcd.print("     ");lcd.write(255);lcd.print(" ||       ");}
+  if ((fineTune >= 51) && (fineTune <= 56))  {    lcd.print("      ");lcd.write(255);lcd.print("||       ");}
+  if ((fineTune >= 57) && (fineTune <= 61))  {    lcd.print("       ");lcd.write(219);lcd.print("|       ");}
+  if ((fineTune >= 62) && (fineTune <= 64))  {    lcd.print("    ||  ");lcd.write(5);lcd.print("  ||    ");}
+  if ((fineTune >= 65) && (fineTune <= 70))  {    lcd.print("       |");lcd.write(219);lcd.print("       ");}
+  if ((fineTune >= 71) && (fineTune <= 75))  {    lcd.print("       ||");lcd.write(255);lcd.print("      ");}
+  if ((fineTune >= 76) && (fineTune <= 81))  {    lcd.print("       || ");lcd.write(255);lcd.print("     ");}
+  if ((fineTune >= 82) && (fineTune <= 86))  {    lcd.print("       ||  ");lcd.write(255);lcd.print("    ");}
+  if ((fineTune >= 87) && (fineTune <= 92))  {    lcd.print("       ||   ");lcd.write(255);lcd.print("   ");}
+  if ((fineTune >= 93) && (fineTune <= 98))  {    lcd.print("       ||    ");lcd.write(255);lcd.print("  ");}
+  if ((fineTune >= 99) && (fineTune <= 103)) {    lcd.print("       ||     ");lcd.write(255);lcd.print(" ");}
+  if ((fineTune >= 104) && (fineTune <= 110)){    lcd.print("       ||      ");lcd.write(255);}
+  if (fineTune >= 101)                       {    lcd.print("       ||      ");lcd.write(255);}
+  displayTuner(screen, note, string, fineTune);
+}
+
+*/
+
+
 
 /*===================================================================================*/
 /*Axelman8*/

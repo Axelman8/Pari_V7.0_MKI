@@ -43,23 +43,23 @@ started from scratch with help of the shared programming of: @prongs_386 | @tyso
 #include <malloc.h>
 #include <stdlib.h>
 #include <stdio.h>
+#include <SD_ini.h>
+#include <variables_ini.h>
 
 //RAM usage shown in the serial monitor
 #include <MemoryFree.h>;
 
 // USE the tabs
-#include "variables.h"
 #include "switch_PageSettings.h"
 #include "Tuner.h"
 #include "screenSetup.h"
 #include "Screenstyle.h"
-#include "SD_program.h"
+
 
 
 /*=====================================================  -  SETUP  -  ====================================================*/
 void setup() 
 {
-
   //  Set SERIAL baud rate:
   while (!Serial);
   //Serial.begin(9600);   // Works good with the Serial.  Not very quick screen refresh on the peddleboard but it works good.
@@ -115,7 +115,7 @@ void setup()
   t = rtc.getTime();
 /*===========================================================================================================================*/
   
-/* -- MIDI settings  (Also see Variables.h) --*/
+/* -- MIDI settings  (Also see variables_ini.h) --*/
   byte MidiChannel = midichannelSet;
   MIDI.begin(0);
   MIDI.turnThruOff();

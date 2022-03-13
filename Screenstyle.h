@@ -3,7 +3,6 @@
 
 /*===========================================   -  Include library's  -  ================================================*/
 #include <SD_ini.h>
-#include "SD_program.h"
 #include "preset_range.h"
 
 /*========================================================================================================================*/
@@ -324,21 +323,21 @@ void ampabcdStyle2()
 {
   tft.setTextColor(TFT_BLACK, TFT_GREEN);
   tft.setTextSize(3);  tft.setCursor(1, 105);
-  tft.println(" CHANNEL ");
+  tft.println(" CHANNEL  ");
   amp_abcd_GREENbezel();
 }
 
 void ampabcdStyle3()
 {
-  tft.setTextColor(TFT_BLACK, TFT_RED);
+  tft.setTextColor(TFT_CYAN, TFT_RED);
   tft.setTextSize(3); tft.setCursor(1, 105);
-  tft.println(" CHANNEL ");
+  tft.println(" CHANNEL  ");
   amp_abcd_REDbezel(); 
 }
 
 void ampabcdStyle4()
 {
-  tft.setTextColor(TFT_BLUE);
+  tft.setTextColor(TFT_YELLOW);
   tft.setTextSize(20); tft.setCursor(64, 25);
 }
 
@@ -612,6 +611,19 @@ void auditionMode_screen()
     auditionMode = false;
   }
 
+void auditionMode_ON_screen() 
+{
+            digitalWrite (CS13, LOW);
+            tft.fillScreen(TFT_BLACK);
+            tft.setTextColor(TFT_RED);
+            tft.setTextSize(3); tft.setCursor(10, 30);
+            tft.println("AUDITION");
+            tft.setTextSize(4); tft.setCursor(60, 80);
+            tft.println("ON");
+            tft.drawRect(0, 0, 160, 128, TFT_RED); // Draw bezel line
+            digitalWrite (CS13, HIGH);
+            delay(200);
+  }
 
 void tuner_selectionScreen()
 {
@@ -633,12 +645,14 @@ void tuner_circleSelection()
 {
     strcpy(tuner_type, " CIRCLE ");
     tuner_selectionScreen();
+    delay(200);    
 } 
 
 void tuner_pyramidSelection()
 {
     strcpy(tuner_type, " PYRAMID");
     tuner_selectionScreen();
+    delay(200); 
 } 
 
 
@@ -704,8 +718,6 @@ void tapTempo_selectionScreen()
     digitalWrite (CS14, HIGH);
   }
 }
-
-
 
 
 TFT_eSprite tempoflash = TFT_eSprite(&tft);  // Declare Sprite object "spr" with pointer to "tft" object
@@ -859,7 +871,10 @@ void sceneTopscreens()
 void auditionmodeTopscreens()
 {
   strcpy(page, "preset");
-  
+  digitalWrite (CS11, LOW); presetScreen_11; digitalWrite (CS11, HIGH);
+  digitalWrite (CS15, LOW); presetScreen_15; digitalWrite (CS15, HIGH); 
+  tapTempo_flash_selection_screen();
+  tuner_selectionScreen();   
   debugln(); debug(" * PAGE is set to: PRESET while in auditionMode");
 }
 
