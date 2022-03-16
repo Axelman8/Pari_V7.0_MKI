@@ -8,6 +8,7 @@
  
  
  ===========================================================================
+ 
  library file: SD_ini.h
  
  -> Define the function on the screens 5, 10, 11, 12, 13, 14, 15
@@ -20,11 +21,13 @@
  -> Border color settings for active screen (default is green)
  
  ===========================================================================
+ 
  library file:  variables_ini.h 
  
   -> placeholder for all used variables
   
  =========================================================================== 
+ 
  library file: preset_ini.h for the user presets  
  
   -> Your preset names 0-511
