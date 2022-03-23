@@ -115,14 +115,16 @@
 *                           - Bugfix select an empty effectscreen makes the unit freeze.                      -> DONE  
 *                             NOTE! I have no solution to clear the effectindex. Only good thing:
 *                             the programme doesnt freeze anymore!
-*               07-03-2022  - Fixed the effect1 - effect19 by resetting the effect variable value to ZERO 
+* Version: V7.0 07-03-2022  - Fixed the effect1 - effect19 by resetting the effect variable value to ZERO 
 *                             on every new preset selection.                                                  -> DONE               
 *               13-3-2022   - Rearange program files:  add them as libriary files:                
 *                             1: Create SD_ini.h file for the personal screen definitions                     -> DONE                            
 *                             2: Create variables_ini.h for the variables                                     -> DONE
 *                             3: Create preset_ini.h for the user presets                                     -> DONE
-*                             
-*                             4 Remove variables.h and SD_program.h from the .ino file                        -> DONE
-*                           
+                              NOTE:     Libriary files must be placed here:
+                              C:\Users\[user]\Documents\Arduino\libraries\PARI_INI
+*                           - Remove variables.h and SD_program.h from the .ino file                          -> DONE
+*                           - FIX  In AUDIONMODE going to the tuner and back gave screen build-up problems    -> DONE 
+*               23-3-2022   - FIX previous preset not showing correct presetname if preset = 9,19,29,39,etc   -> DONE              
 ========================================================================================================================*/
 /*Axelman8*/

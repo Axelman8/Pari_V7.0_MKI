@@ -428,7 +428,7 @@ void presetUp_screen()
     {
     PresetNumb = active_Preset;
     presetRange();
-    delay(50);
+    delay(10);
     nextPresetnr = (nextPreset - PresetNumb);
     if ((nextPresetnr) == 10)
     {
@@ -444,7 +444,7 @@ void presetUp_screen()
       nextPresetnr = (nextPreset - PresetNumb);
       }  
     preset_Names();
-    delay(50);
+    delay(10);
 
   switch (nextPresetnr)
   {
@@ -459,7 +459,7 @@ void presetUp_screen()
   case 8:  strcpy(nextPresetName, PresetName8); debugln(); debug(" nextPresetName = "); debug(PresetName8); break;
   case 9:  strcpy(nextPresetName, PresetName9); debugln(); debug(" nextPresetName = "); debug(PresetName9); break;
   }
-    debugln(); debug(" nextPresetnr = "); debug(nextPresetnr);  
+    debugln(); debug(" nextPresetnr = "); debug(nextPreset);  
     debugln(); debug(" Nextpreset PresetNumb = "); debug(PresetNumb);
       
     tft.setTextWrap(true);
@@ -474,20 +474,19 @@ void presetUp_screen()
   ===========================================================================================================================*/ 
 void presetDown_screen()
 {
-if ((previousPreset) != maxPreset)
+  previousPresetnr = (previousPreset % 10);
+    if ((previousPreset) != maxPreset)
     {    
     PresetNumb = active_Preset;
-    presetRange();
-    previousPresetnr = (previousPreset - PresetNumb);
-     }
+    if ((previousPreset % 10) == 9)
+    {PresetNumb = (PresetNumb - 10); presetRange(); delay(10);}
+     else
+    {presetRange(); delay(10);}
+    }
     else
-    {
-      PresetNumb = maxPreset;
-      presetRange();
-      previousPresetnr = (previousPreset - PresetNumb);
-      }
+    {PresetNumb = maxPreset;presetRange();delay(10);}
     preset_Names();
-    delay(50);
+    delay(10);
         
   switch (previousPresetnr)
   {
@@ -502,7 +501,7 @@ if ((previousPreset) != maxPreset)
   case 8:  strcpy(previousPresetName, PresetName8); debugln(); debug(" previousPresetName = "); debug(PresetName8); break;
   case 9:  strcpy(previousPresetName, PresetName9); debugln(); debug(" previousPresetName = "); debug(PresetName9); break;
   }
-    debugln(); debug(" previousPresetnr = "); debug(previousPresetnr);
+    debugln(); debug(" previousPresetnr = "); debug(previousPreset);
     debugln(); debug(" PreviousPreset PresetNumb = "); debug(PresetNumb); 
     tft.setTextWrap(true);
     presetDown_Style();  tft.println(previousPreset);

@@ -60,7 +60,7 @@ started from scratch with help of the shared programming of: @prongs_386 | @tyso
 /*=====================================================  -  SETUP  -  ====================================================*/
 void setup() 
 {
-  //  Set SERIAL baud rate:
+//Set SERIAL baud rate:
   while (!Serial);
   //Serial.begin(9600);   // Works good with the Serial.  Not very quick screen refresh on the peddleboard but it works good.
   //Serial.begin(115200); // Works good with the Serial.  Some quicker screen refresh on the peddleboard. Looks very nice i like it.
@@ -68,7 +68,6 @@ void setup()
   //Serial.begin(500000); // Forget the Serial, but screen refresh rate,  I like it alot!. #TESTED: It will work good for at least 3 hours straight!
   Serial.begin(1000000);  // Screen refresh rate is awesome, my favor-it. #NOT TESTED: I dont know if it will hold up for 3 hours straight!
   Serial.flush();
-
 
 /*==================================================  -  MEMORY usage  -    =================================================*/
  char* heapend = sbrk(0);
