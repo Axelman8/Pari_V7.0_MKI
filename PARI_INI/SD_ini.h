@@ -1,5 +1,8 @@
 #pragma once
+
+
 #include <variables_ini.h>
+#include <Arduino.h>
 
 
 #if DEBUG == DEBUG1
@@ -9,6 +12,7 @@
 #define debug(x)
 #define debugln(x)
 #endif
+
 
 /*=======================================================================================================================================
 
@@ -39,7 +43,7 @@ Just edit and save and then flash the program to the arduino
 
 
 /*=======================================================================================================================================*/
-//    SERIAL DEBUGGER
+//    SERIAL AND DEBUGGER
 /*=======================================================================================================================================*/
 
 // Using the Serial DEBUGGER |  ON = DEBUG1  |  OFF = DEBUG0 
@@ -156,7 +160,7 @@ presetScenes_Tuner_selection()
 #define sceneScreen_15 numberSelect_screen()
 #define sceneswitch_15 numberPage_selection()
 
-//BUTTONS ONLY
+//SWITCH ONLY
 #define sceneswitch_16 bankDown_selection()
 #define sceneswitch_17 bankUp_selection()
 #define sceneswitch_18 tunerPage_selection()
@@ -179,7 +183,7 @@ presetScenes_Tuner_selection()
 #define presetScreen_15 numberSelect_screen()
 #define presetswitch_15 numberPage_selection()
 
-//BUTTONS ONLY
+//SWITCH ONLY
 #define presetswitch_16 bankDown_selection()
 #define presetswitch_17 bankUp_selection()
 #define presetswitch_18 tunerPage_selection()
@@ -202,7 +206,7 @@ presetScenes_Tuner_selection()
 #define effectScreen_15 numberSelect_screen()
 #define effectswitch_15 numberPage_selection()
 
-//BUTTONS ONLY
+//SWITCH ONLY
 #define effectswitch_16 bankDown_selection()
 #define effectswitch_17 bankUp_selection()
 #define effectswitch_18 tunerPage_selection()
@@ -224,7 +228,7 @@ presetScenes_Tuner_selection()
 #define AMP_effectScreen_15 numberSelect_screen()
 #define AMP_effectswitch_15 numberPage_selection()
 
-//BUTTONS ONLY
+//SWITCH ONLY
 #define AMP_effectswitch_16 bankDown_selection()
 #define AMP_effectswitch_17 bankUp_selection()
 #define AMP_effectswitch_18 tunerPage_selection()
@@ -247,7 +251,7 @@ presetScenes_Tuner_selection()
 #define looperScreen_15 numberSelect_screen()
 #define looperswitch_15 numberPage_selection()
 
-//BUTTONS ONLY
+//SWITCH ONLY
 #define looperswitch_16 bankDown_selection()
 #define looperswitch_17 bankUp_selection()
 #define looperswitch_18 tunerPage_selection()
@@ -266,7 +270,7 @@ presetScenes_Tuner_selection()
 #define numberScreen_14 tapTempo_screen()
 #define numberScreen_15 numberSelect_screen()
 
-//BUTTONS ONLY
+//SWITCH ONLY
 #define numberswitch_16 bankDown_selection()
 #define numberswitch_17 bankUp_selection()
 #define numberswitch_18 reset_numberSelect_screen()
@@ -368,14 +372,14 @@ presetScenes_Tuner_selection()
 
 /*=======================================================================================================================================*/
 
-// PRESET DOWN screen (Screen 5) ->  1 screen configuration of the screen background and txt1(PRESET) and txt2(<<) color
+// PRESET DOWN screen (Screen 5) ->  1 screen configuration of the screen background and txt1(number) and txt2(name) color
 #define presetDown_screen_fillscreen TFT_BLACK
 #define presetDown_screen_txt1_color TFT_BLUE
 #define presetDown_screen_txt1_BGcolor presetDown_screen_fillscreen
 #define presetDown_screen_txt2_color TFT_YELLOW
 #define presetDown_screen_txt2_BGcolor presetDown_screen_fillscreen
 
-// PRESET UP screen (Screen 10) ->  1 screen configuration of the screen background and txt1(PRESET) and txt2(>>) color
+// PRESET UP screen (Screen 10) ->  1 screen configuration of the screen background and txt1(number) and txt2(name) color
 #define presetUp_screen_fillscreen TFT_BLACK
 #define presetUp_screen_txt1_color TFT_BLUE
 #define presetUp_screen_txt1_BGcolor presetUp_screen_fillscreen
@@ -468,8 +472,8 @@ presetScenes_Tuner_selection()
 #define tapTempo_screen_txt2_color TFT_YELLOW
 #define tapTempo_screen_txt2_BGcolor tapTempo_screen_fillscreen
 #define tapTempo_screen_flash_color TFT_LIGHTGREY  // this is the color of the flash rectangle fillment
-#define tapTempo_screen_flash_color1 TFT_PURPLE  // this is the color of the flash rectangle fillment
-#define tapTempo_screen_sprite_color TFT_WHITE  // this is the color of the flash rectangle fillment
+#define tapTempo_screen_flash_color1 TFT_PURPLE    // this is the color of the flash rectangle fillment
+#define tapTempo_screen_sprite_color TFT_WHITE     // this is the color of the flash rectangle fillment
 
 
 // TAP TEMPO selectionScreen (when tapping the TEMPO to the beat. The screen shows its selected and to be tapped again) 

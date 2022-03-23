@@ -26,14 +26,15 @@
 #include <SPI.h>
 #include <DS3231.h>
 
-/*===================================================================================*/
 
 #define midichannelSet 1
 #define serial Serial1
 
+/*===================================================================================*/
 
 //MIDI_CREATE_INSTANCE(Type, SerialPort, Name)
-MIDI_CREATE_INSTANCE(HardwareSerial, serial, MIDI);
+ MIDI_CREATE_INSTANCE(HardwareSerial, serial, MIDI);
+
 /*===================================================================================*/
 
 /* -- Time clock -- */
