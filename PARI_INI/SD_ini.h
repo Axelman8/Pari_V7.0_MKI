@@ -319,6 +319,16 @@ presetScenes_Tuner_selection()
  * txt1,2,3BGcolor  = TEXT background color: this is taken from the fillscreen background color!
 */
 
+
+// ****************************************
+// NEW ADDED on 24-3-2022
+
+//Choose color of scene active bezel
+#define sceneStyle_ACTIVEbezel TFT_GREEN
+
+// ****************************************
+
+
 // bootup TOPscreens 12, 13, 14 -> Topscreens with text: A X E 
 #define bootupStyle1_fillscreen TFT_BLACK 
 #define bootupStyle1_txt1_color TFT_CYAN 
@@ -351,37 +361,38 @@ presetScenes_Tuner_selection()
 #define activesceneStyle1_txt1_BGcolor activesceneStyle1_fillscreen
 
 // ALL SCENES screens Background color
-#define sceneStyle0_fillscreen TFT_BLACK
+#define sceneStyle0_fillscreen TFT_PURPLE
 
-// ALL SCENE screen color 
+// ALL SCENE screen color  txt1 and txt2 = number  
 #define sceneStyle1_txt1_color TFT_YELLOW
 #define sceneStyle1_txt1_BGcolor sceneStyle0_fillscreen
 #define sceneStyle1_txt2_color TFT_YELLOW
 #define sceneStyle1_txt2_BGcolor sceneStyle0_fillscreen
 
-#define sceneStyle2_txt1_color TFT_CYAN
+//txt1 and txt2 = scenename text
+#define sceneStyle2_txt1_color TFT_WHITE
 #define sceneStyle2_txt1_BGcolor sceneStyle0_fillscreen
-#define sceneStyle2_txt2_color TFT_CYAN
+#define sceneStyle2_txt2_color TFT_WHITE
 #define sceneStyle2_txt2_BGcolor sceneStyle0_fillscreen
 
-#define sceneStyle3_txt1_color TFT_CYAN
+#define sceneStyle3_txt1_color TFT_WHITE
 #define sceneStyle3_txt1_BGcolor sceneStyle0_fillscreen
 
-#define sceneStyle4_txt1_color TFT_YELLOW
+#define sceneStyle4_txt1_color TFT_YELLOW 
 #define sceneStyle4_txt1_BGcolor sceneStyle0_fillscreen
 
 /*=======================================================================================================================================*/
 
 // PRESET DOWN screen (Screen 5) ->  1 screen configuration of the screen background and txt1(number) and txt2(name) color
 #define presetDown_screen_fillscreen TFT_BLACK
-#define presetDown_screen_txt1_color TFT_BLUE
+#define presetDown_screen_txt1_color TFT_YELLOW
 #define presetDown_screen_txt1_BGcolor presetDown_screen_fillscreen
 #define presetDown_screen_txt2_color TFT_YELLOW
 #define presetDown_screen_txt2_BGcolor presetDown_screen_fillscreen
 
 // PRESET UP screen (Screen 10) ->  1 screen configuration of the screen background and txt1(number) and txt2(name) color
 #define presetUp_screen_fillscreen TFT_BLACK
-#define presetUp_screen_txt1_color TFT_BLUE
+#define presetUp_screen_txt1_color TFT_YELLOW
 #define presetUp_screen_txt1_BGcolor presetUp_screen_fillscreen
 #define presetUp_screen_txt2_color TFT_YELLOW
 #define presetUp_screen_txt2_BGcolor presetUp_screen_fillscreen
@@ -395,18 +406,18 @@ presetScenes_Tuner_selection()
 #define presetNameNumber_screen_txt2_color TFT_CYAN
 #define presetNameNumber_screen_txt2_BGcolor presetNameNumber_screen_fillscreen
 
-//Not active PRESET number text color settings
+//Not active PRESET number text color settings  //All preset screens number text 
 #define presetNumberStyle1_fillscreen TFT_BLACK
-#define presetNumberStyle1_txt1_color TFT_MAGENTA
+#define presetNumberStyle1_txt1_color TFT_YELLOW
 #define presetNumberStyle1_txt1_BGcolor presetNumberStyle1_fillscreen
 
-//PRESET name text color settings
+//PRESET name text color settings              //All preset screens number text 
 #define presetNameStyle1_txt1_color TFT_CYAN
 #define presetNameStyle1_txt1_BGcolor presetNumberStyle1_fillscreen
 
 //Active preset settings text color settings
 #define presetNumberStyle2_fillscreen TFT_BLACK
-#define presetNumberStyle2_txt1_color TFT_MAGENTA
+#define presetNumberStyle2_txt1_color TFT_YELLOW
 #define presetNumberStyle2_txt1_BGcolor presetNumberStyle2_fillscreen
 
 //Active preset settings
@@ -420,8 +431,8 @@ presetScenes_Tuner_selection()
 
 // PRESET number and name on Screen 13 -> configuration color of the number(txt1) and text (txt2)
 #define screen13Style_fillscreen TFT_BLACK
-#define screen13Style_txt1_color TFT_BLUE
-#define screen13Style_txt1_BGcolor screen13Style_fillscreen
+#define screen13Style_txt1_color TFT_CYAN
+#define screen13Style_txt1_BGcolor TFT_BLUE //screen13Style_fillscreen
 #define screen13Style_txt2_color TFT_YELLOW
 #define screen13Style_txt2_BGcolor screen13Style_fillscreen
 
@@ -433,6 +444,8 @@ presetScenes_Tuner_selection()
 #define preset_screen_txt2_color TFT_BLACK
 #define preset_screen_txt2_BGcolor preset_screen_fillscreen
 
+
+
 // PRESET ADDITIONAL TOP screen -> PRESET(txt1) (topscreens for +100,-100,+50,-50) text color
 #define presetStyle1_fillscreen TFT_PINK
 #define presetStyle1_txt1_color TFT_BLACK
@@ -441,14 +454,14 @@ presetScenes_Tuner_selection()
 #define presetStyle1_txt2_BGcolor presetStyle1_fillscreen
 
 // EFFECT screen -> 1 screen configuration of the screen background and txt1(EFFECT) and txt2(PAGE) color
-#define effect_screen_fillscreen TFT_PURPLE
+#define effect_screen_fillscreen TFT_BLACK
 #define effect_screen_txt1_color TFT_CYAN
 #define effect_screen_txt1_BGcolor effect_screen_fillscreen
 #define effect_screen_txt2_color TFT_CYAN
 #define effect_screen_txt2_BGcolor effect_screen_fillscreen
 
 // AMP ABCD screen -> 1 screen configuration of the screen background and txt1(AMP/CAB) and txt2(ABCD) color
-#define ampABCD_screen_fillscreen TFT_PURPLE
+#define ampABCD_screen_fillscreen TFT_BLACK
 #define ampABCD_screen_txt1_color TFT_CYAN
 #define ampABCD_screen_txt1_BGcolor ampABCD_screen_fillscreen
 #define ampABCD_screen_txt2_color TFT_CYAN
@@ -501,22 +514,22 @@ presetScenes_Tuner_selection()
 
 
 // NOWAH TOPscreen 11 configuration of the screen background and txt1(NO WAH ACTIVE) color
-#define NOWAH_screen_fillscreen TFT_PURPLE
+#define NOWAH_screen_fillscreen TFT_BLACK
 #define NOWAH_screen_txt1_color TFT_RED
 #define NOWAH_screen_txt1_BGcolor NOWAH_screen_fillscreen
 
 // YESWAH TOPscreen 11 configuration of the screen background and txt1(WAH AVAILABLE) color
-#define YESWAH_screen_fillscreen TFT_PURPLE
+#define YESWAH_screen_fillscreen TFT_BLACK
 #define YESWAH_screen_txt1_color TFT_GREEN
 #define YESWAH_screen_txt1_BGcolor YESWAH_screen_fillscreen
 
 // NOLOOPER TOPscreen 12 configuration of the screen background and txt1(NO LOOPER) color
-#define NOLOOPER_screen_fillscreen TFT_PURPLE
+#define NOLOOPER_screen_fillscreen TFT_BLACK
 #define NOLOOPER_screen_txt1_color TFT_RED
 #define NOLOOPER_screen_txt1_BGcolor NOLOOPER_screen_fillscreen
 
 // YESLOOPER TOPscreen 12 configuration of the screen background and txt1(LOOPER ACTIVE) color
-#define YESLOOPER_screen_fillscreen TFT_PURPLE
+#define YESLOOPER_screen_fillscreen TFT_BLACK
 #define YESLOOPER_screen_txt1_color TFT_GREEN
 #define YESLOOPER_screen_txt1_BGcolor YESLOOPER_screen_fillscreen
 

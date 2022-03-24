@@ -99,16 +99,16 @@ void auditionmode_LCD_text()
        SCREENS BUILT TEXT and COLOR ADD-ONS 
   ===========================================================================================================================*/
 
-void scene_GREENbezel()  // for scenes
+void scene_ACTIVEbezel()  // for scenes
 {
-   tft.drawLine(0, 99, 160, 99, TFT_GREEN);     // draw single line looks nice
-   tft.drawRect(0, 0, 160, 128, ST7735_GREEN);  // Draw bezel line
+   tft.drawLine(0, 99, 160, 99, sceneStyle_ACTIVEbezel);  // draw single line looks nice
+   tft.drawRect(0, 0, 160, 128, sceneStyle_ACTIVEbezel);  // Draw bezel line
 }
 
-void scene_BLACKbezel()  // for scenes
+void scene_notACTIVEbezel()  // for scenes
 {
-   tft.drawLine(0, 99, 160, 99, TFT_BLACK); // draw single line looks nice
-   tft.drawRect(0, 0, 160, 128, ST7735_BLACK); // Draw bezel line
+   tft.drawLine(0, 99, 160, 99, sceneStyle0_fillscreen); // draw single line looks nice
+   tft.drawRect(0, 0, 160, 128, sceneStyle0_fillscreen); // Draw bezel line
 }
 
 
@@ -424,28 +424,20 @@ void presetNameNumber_screen()
   ===========================================================================================================================*/  
 void presetUp_screen()
 {
+  nextPresetnr = (nextPreset % 10);
   if ((nextPreset) != 0)
-    {
-    PresetNumb = active_Preset;
-    presetRange();
-    delay(10);
-    nextPresetnr = (nextPreset - PresetNumb);
-    if ((nextPresetnr) == 10)
-    {
-      nextPresetnr = 0;
-      PresetNumb = (active_Preset + 10);
-      presetRange();
+      {
+       PresetNumb = active_Preset; 
+        if ((nextPresetnr % 10) == 0)
+        {PresetNumb = (active_Preset + 10);}
       }
-    }
     else
     {
-      PresetNumb = 0;
-      presetRange();
-      nextPresetnr = (nextPreset - PresetNumb);
-      }  
-    preset_Names();
-    delay(10);
-
+      PresetNumb = 0; 
+        }
+    presetRange(); delay(10); 
+    preset_Names(); delay(10);
+    
   switch (nextPresetnr)
   {
   case 0:  strcpy(nextPresetName, PresetName0); debugln(); debug(" nextPresetName = "); debug(PresetName0); break;
@@ -476,17 +468,17 @@ void presetDown_screen()
 {
   previousPresetnr = (previousPreset % 10);
     if ((previousPreset) != maxPreset)
-    {    
+      {    
     PresetNumb = active_Preset;
     if ((previousPreset % 10) == 9)
-    {PresetNumb = (PresetNumb - 10); presetRange(); delay(10);}
-     else
-    {presetRange(); delay(10);}
-    }
+    {PresetNumb = (PresetNumb - 10);}
+      }
     else
-    {PresetNumb = maxPreset;presetRange();delay(10);}
-    preset_Names();
-    delay(10);
+        {
+      PresetNumb = maxPreset;
+        }
+    presetRange(); delay(10);
+    preset_Names(); delay(10);
         
   switch (previousPresetnr)
   {
@@ -793,17 +785,9 @@ void tapTempo_flash_OFF()
   }
   else
   {
-//  tempoflash.drawRoundRect(0, 0, 30, 20, 6, tapTempo_screen_sprite_color);
   tempoflash.fillRoundRect(2, 2, 26, 16, 6, tapTempo_screen_fillscreen);
-  
-//  tempoflash.drawRoundRect(43, 0, 30, 20, 6, tapTempo_screen_sprite_color);
   tempoflash.fillRoundRect(45, 2, 26, 16, 6, tapTempo_screen_fillscreen);
-
-
-//  tempoflash.drawRoundRect(86, 0, 30, 20, 6, tapTempo_screen_sprite_color);
   tempoflash.fillRoundRect(88, 2, 26, 16, 6, tapTempo_screen_fillscreen);
-
-//  tempoflash.drawRoundRect(129, 0, 30, 20, 6, tapTempo_screen_sprite_color);
   tempoflash.fillRoundRect(131, 2, 26, 16, 6, tapTempo_screen_fillscreen);  
   }
   digitalWrite (CS14, LOW);

@@ -311,7 +311,7 @@ void ini_scenes()  //setup scene screens
 
       digitalWrite (CS1, LOW);
       if (active_Scene == 1)
-      {activesceneStyle1(); tft.println("1"); scene_GREENbezel();}
+      {activesceneStyle1(); tft.println("1"); scene_ACTIVEbezel();}
       else
       {sceneStyle1(); tft.println("1");}
       
@@ -330,7 +330,7 @@ void ini_scenes()  //setup scene screens
       //2
       digitalWrite (CS2, LOW);
       if (active_Scene == 2)
-      {activesceneStyle1(); tft.println("2"); scene_GREENbezel();}
+      {activesceneStyle1(); tft.println("2"); scene_ACTIVEbezel();}
       else
       {sceneStyle1(); tft.println("2");}
      
@@ -348,7 +348,7 @@ void ini_scenes()  //setup scene screens
       //3
       digitalWrite (CS3, LOW);
       if (active_Scene == 3)
-      {activesceneStyle1(); tft.println("3"); scene_GREENbezel();}
+      {activesceneStyle1(); tft.println("3"); scene_ACTIVEbezel();}
       else
       {sceneStyle1(); tft.println("3");}
       
@@ -367,7 +367,7 @@ void ini_scenes()  //setup scene screens
       //4
       digitalWrite (CS4, LOW);
       if (active_Scene == 4)
-      {activesceneStyle1(); tft.println("4"); scene_GREENbezel();}
+      {activesceneStyle1(); tft.println("4"); scene_ACTIVEbezel();}
       else
       {sceneStyle1(); tft.println("4");}
       
@@ -386,7 +386,7 @@ void ini_scenes()  //setup scene screens
       //5
       digitalWrite (CS6, LOW);
       if (active_Scene == 5)
-      {activesceneStyle1(); tft.println("5"); scene_GREENbezel();}
+      {activesceneStyle1(); tft.println("5"); scene_ACTIVEbezel();}
       else
       {sceneStyle1(); tft.println("5");}
       
@@ -405,7 +405,7 @@ void ini_scenes()  //setup scene screens
       //6
       digitalWrite (CS7, LOW);
       if (active_Scene == 6)
-      {activesceneStyle1(); tft.println("6"); scene_GREENbezel();}
+      {activesceneStyle1(); tft.println("6"); scene_ACTIVEbezel();}
       else
       {sceneStyle1(); tft.println("6");}
       
@@ -424,7 +424,7 @@ void ini_scenes()  //setup scene screens
       //7
       digitalWrite (CS8, LOW);
       if (active_Scene == 7)
-      {activesceneStyle1(); tft.println("7"); scene_GREENbezel();}
+      {activesceneStyle1(); tft.println("7"); scene_ACTIVEbezel();}
       else
       {sceneStyle1(); tft.println("7");}
       
@@ -443,7 +443,7 @@ void ini_scenes()  //setup scene screens
       //8
       digitalWrite (CS9, LOW);
       if (active_Scene == 8)
-      {activesceneStyle1(); tft.println("8"); scene_GREENbezel();}
+      {activesceneStyle1(); tft.println("8"); scene_ACTIVEbezel();}
       else
       {sceneStyle1(); tft.println("8");}
       

@@ -120,7 +120,7 @@ void ini_looper()
   digitalWrite(CS3, LOW);  looperStyle1();  tft.println("UNDO");    digitalWrite(CS3, HIGH);
   digitalWrite(CS4, LOW);  looperStyle1();  tft.println("ONCE");    digitalWrite(CS4, HIGH);
   digitalWrite(CS5, LOW);  looperStyle1();  tft.println("REVERSE"); digitalWrite(CS5, HIGH);
-  digitalWrite(CS6, LOW);  looperStyle1();  tft.println("HALF SPD");digitalWrite(CS6, HIGH);
+  digitalWrite(CS6, LOW);  looperStyle1();  tft.println("HALFSPD"); digitalWrite(CS6, HIGH);
 
 }
 
@@ -270,7 +270,7 @@ void ini_screens()  //clear all screens after 1st boot
   digitalWrite(CS6, LOW);  digitalWrite(CS7, LOW);  digitalWrite(CS8, LOW);  digitalWrite(CS9, LOW);  digitalWrite(CS10,LOW);  
   digitalWrite(CS11, LOW); digitalWrite(CS12, LOW); digitalWrite(CS13,LOW);  digitalWrite(CS14,LOW);  digitalWrite(CS15,LOW);
 
-  tft.fillScreen(sceneStyle0_fillscreen);
+  tft.fillScreen(TFT_BLACK);
 
   digitalWrite(CS1, HIGH);  digitalWrite(CS2, HIGH);  digitalWrite(CS3, HIGH);  digitalWrite(CS4, HIGH);  digitalWrite(CS5, HIGH);  
   digitalWrite(CS6, HIGH);  digitalWrite(CS7, HIGH);  digitalWrite(CS8, HIGH);  digitalWrite(CS9, HIGH);  digitalWrite(CS10,HIGH);  

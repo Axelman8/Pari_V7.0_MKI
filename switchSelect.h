@@ -224,7 +224,7 @@ void sceneSelection()
   digitalWrite (CS, LOW);
   activesceneStyle1();
   tft.println(sceneNumber);
-  scene_GREENbezel();
+  scene_ACTIVEbezel();
   digitalWrite (CS, HIGH);
   delay(200);
 }
